@@ -1,4 +1,4 @@
-FROM ubuntu:16.10
+FROM ubuntu
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
     bash gcc \
