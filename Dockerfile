@@ -1,12 +1,10 @@
 FROM debian:stretch
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
-    bash gcc \
+    bash gcc g++ \
     curl wget \
-    pkg-config build-essential make automake autogen libtool \
+    pkg-config make automake autogen libtool libtool-bin \
     libpcre3-dev bison yodl \
     tar xz-utils bzip2 gzip \
-    git automake libpcre3-dev bison yodl autoconf-archive \
-    rsync \
-    sed \
-    upx
+    git libpcre3-dev bison autoconf-archive \
+    sed
