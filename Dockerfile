@@ -1,11 +1,5 @@
-#FROM debian:stretch
-FROM ubuntu:artful
+FROM fedora:rawhide
+#FROM ubuntu:artful
 
-RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
-    bash gcc g++ binutils dh-exec \
-    curl wget \
-    pkg-config make automake autogen libtool libtool-bin \
-    libpcre3-dev bison yodl \
-    tar xz-utils bzip2 gzip \
-    git libpcre3-dev bison autoconf-archive zlib1g-dev yasm nasm re2c \
-    sed
+RUN dnf update -y
+RUN dnf install gcc cpp gcc-c++ libsigc++20 libverto-devel pcre-cpp libtool pcre-devel pcre-utf16 pcre-utf32 zlib-devel openssl-devel keyutils-libs-devel krb5-devel libcom_err-devel libsigc++20-devel binutils perl cmake gettext make automake autoconf m4 pkg-config autoconf-archive yasm binutils-devel libsigc++20-devel openssl-static bzip2 curl wget pcre2 pcre2-devel bison gzip git nasm re2c sed bash which xz -y
