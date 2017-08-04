@@ -1,6 +1,6 @@
 #FROM debian:stretch
-FROM ubuntu:artful
-#FROM ubuntu
+#FROM ubuntu:artful
+FROM ubuntu
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
     bash gcc \
