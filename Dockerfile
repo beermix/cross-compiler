@@ -1,5 +1,7 @@
 #FROM debian:stretch
 #FROM ubuntu:artful
+FROM debian:jessie
+
 FROM ubuntu
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
