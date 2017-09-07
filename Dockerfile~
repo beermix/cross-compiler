@@ -1,10 +1,9 @@
 #FROM debian:stretch
-#FROM ubuntu:artful
-FRROM debian:jessie
+FROM ubuntu:artful
+#FROM debian:jessie
+#FROM ubuntu
 
-FROM ubuntu
-
-RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install \
+RUN apt-get update && apt-get -y dist-upgrade && apt-get -y  install \
     bash gcc \
     curl wget \
     pkg-config build-essential make automake autogen libtool yasm \
