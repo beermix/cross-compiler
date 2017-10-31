@@ -1,5 +1,5 @@
-#FROM debian:stretch
-FROM ubuntu:artful
+FROM debian:stretch
+#FROM ubuntu:artful
 #FROM debian:jessie
 #FROM ubuntu
 
