@@ -1,5 +1,6 @@
 #FROM debian:stretch
-FROM ubuntu:artful
+#FROM ubuntu:artful
+FROM debian:buster
 #FROM ubuntu:xenial
 #FROM debian:jessie
 #FROM ubuntu
@@ -13,4 +14,15 @@ RUN apt update && apt -y dist-upgrade && apt -y  install \
     git automake libpcre3-dev bison yodl autoconf-archive \
     rsync \
     sed \
-    upx
+    upx \
+    bc \
+    ca-certificates \
+    file \
+    ncurses-dev \
+    pkg-config \
+    libtool \
+    python \
+    python-pip \
+    ssh \
+    flex \
+    pax
