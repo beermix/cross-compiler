@@ -1,9 +1,9 @@
 #FROM debian:stretch
 #FROM ubuntu:artful
-FROM debian:buster
+#FROM debian:buster
 #FROM ubuntu:xenial
 #FROM debian:jessie
-#FROM ubuntu
+FROM ubuntu
 
 RUN apt update && apt -y dist-upgrade && apt -y  install \
     bash gcc \
