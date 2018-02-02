@@ -1,11 +1,11 @@
 #FROM debian:stretch
-#FROM ubuntu:artful
+FROM ubuntu:artful
 #FROM debian:buster
 #FROM ubuntu:xenial
 #FROM debian:jessie
-FROM ubuntu
+#FROM ubuntu
 
-RUN apt update && apt -y dist-upgrade && apt -y  install \
+RUN apt-get update && apt-get -y dist-upgrade && apt-get -y  install \
     bash gcc \
     curl wget \
     pkg-config build-essential make automake autogen libtool yasm \
@@ -20,9 +20,6 @@ RUN apt update && apt -y dist-upgrade && apt -y  install \
     file \
     ncurses-dev \
     pkg-config \
-    libtool \
-    python \
-    python-pip \
-    ssh \
+    libtool  libtool-bin \
     flex \
     pax
