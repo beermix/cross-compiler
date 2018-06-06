@@ -5,6 +5,7 @@ FROM ubuntu:artful
 #FROM debian:jessie
 #FROM debian:buster
 #FROM ubuntu
+#FROM debian
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y  install \
     bash gcc \
