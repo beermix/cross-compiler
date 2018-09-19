@@ -1,7 +1,7 @@
 #FROM debian:stretch
 #FROM ubuntu:artful
-#FROM debian:buster
-FROM ubuntu:xenial
+FROM debian:buster
+#FROM ubuntu:xenial
 #FROM debian:jessie
 #FROM debian:buster
 #FROM ubuntu
